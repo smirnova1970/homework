@@ -11,10 +11,10 @@ class TournamentTest(unittest.TestCase):
         cls.all_results = {}
         """setUpClass is the method where the attribute of the all_results class is created. This is a dictionary in 
         which the results of all tests will be saved.
-    setUp is a method where 3 objects are created:
-    A runner named Hussein, with a speed of 10.
-    A runner named Andrey, with a speed of 9.
-    A runner named Nick, with a speed of 3."""
+        setUp is a method where 3 objects are created:
+        1.A runner named Hussein, with a speed of 10.
+        2.A runner named Andrey, with a speed of 9.
+        3.A runner named Nick, with a speed of 3."""
     def setUp(self):
         vs = {'Усэйн': 10, 'Андрей': 9, 'Ник': 3}
         self.runners = {n: rnt.Runner(name=n, speed=v) for n, v in vs.items()}
@@ -54,6 +54,3 @@ class TournamentTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
