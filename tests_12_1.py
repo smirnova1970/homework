@@ -3,6 +3,8 @@ import unittest
 
 
 class RunnerTest(unittest.TestCase):
+    is_frozen = False
+    
     def test_walk(self):
         """A method in which an object of the Runner class with an arbitrary name is created.
         Next, call the walk method on this object 10 times.
