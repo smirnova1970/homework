@@ -55,7 +55,7 @@ for i in range(10):
         cursor.execute("UPDATE Users SET balance = ? WHERE username = ?", (500, "namuser"))
 
 for i in range(10):
-    if i % 2:
+    if i % 3 == 0:
         cursor.execute("DELETE FROM Users  WHERE id = ?", (f"{i}",))
 
 
