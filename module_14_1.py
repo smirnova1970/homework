@@ -59,6 +59,7 @@ for i in range(10):
         cursor.execute("DELETE FROM Users  WHERE id = ?", (f"{i}",))
 
 
+cursor.execute('SELECT username, email, age, balance FROM Users WHERE age != 60')
 users = cursor.fetchall()
 for user in users:
     print(f'Имя: {username} | Почта: {email} | Возраст: {age} | Баланс: {balance}')
